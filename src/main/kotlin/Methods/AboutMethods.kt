@@ -25,4 +25,5 @@ fun main(){
     val daksh = Student1("Daksh Deep", 20, "7.03.2002")
     println(daksh.age)
     val status = daksh.WhatExactly("God of war", 30)
+    println("Hello World")
 }
