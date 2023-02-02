@@ -1,7 +1,6 @@
 fun main(){
     val carCleaned = true
     val CutTheGrass = false
-
     val canGoWithFriend = carCleaned || CutTheGrass
 
     println(canGoWithFriend)
