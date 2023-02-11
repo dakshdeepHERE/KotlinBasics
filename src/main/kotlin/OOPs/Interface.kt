@@ -1,10 +1,12 @@
 package OOPs
 
+import Classes.Employee
+
 fun main(){
     val s = TOdo()
     println(s.name)
-    val a = Name()
-    println(a.name)
+    var myObject = Name()
+    myObject.EmptyFn()
 }
 
 interface Mylistener {
@@ -19,7 +21,10 @@ interface Mylistener {
 class Name : Mylistener{ //
     override var name: String ="Hello"
     override fun EmptyFn() {
-        TODO("World")
+        println("Override Text")
+    }
+
+    override fun jump() {// Optional to override
     }
 }
 
