@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
 
 abstract class MyPerson {     // you cannot create instance of abstract class
 
-    abstract var name: String
+    open var name: String = "daksh"
 
     abstract fun eat()      // abstract properties are 'open' by default
 
