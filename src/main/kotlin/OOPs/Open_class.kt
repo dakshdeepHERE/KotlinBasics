@@ -1,5 +1,0 @@
-package OOPs
-
-fun main(){
-
-}
