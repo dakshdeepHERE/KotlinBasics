@@ -23,3 +23,5 @@ fun main(){
 }
 ```
 Here we can see that the feedtheAnimal() method was from the class Animal() but we instantiated the classs Dog with with the variable dog which allowed us to use the method feedTheAnimal() too. This shows and proves the above statement right that when you instantiate a class/inherit the class it becomes a subclass of that class and also gives the access of all the methods which are inside it.
+
+Here we used the concept of class inheritance.add .
