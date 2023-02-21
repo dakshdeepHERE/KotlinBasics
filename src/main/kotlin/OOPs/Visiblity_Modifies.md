@@ -27,4 +27,12 @@ class Bank(){
 }
 ```
 
-In the above code you will notice that when you enter `account.balance` it will give you compiler error as the balance variable was private and cannot be accessed outside the class Bank(). 
+In the above code you will notice that when you enter `account.balance` it will give you compiler error as the balance variable was private and cannot be accessed outside the class Bank().
+
+## Protected modifier
+
+Protected is only used inside classes that are open or abstract. This modifier is like a better version of modifier private as when you make a variable protected you can still access that variable in the subclasses or the inherited classes out there in the code.
+
+```kotlin
+
+```
