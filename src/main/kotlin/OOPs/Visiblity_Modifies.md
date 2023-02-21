@@ -34,5 +34,23 @@ In the above code you will notice that when you enter `account.balance` it will 
 Protected is only used inside classes that are open or abstract. This modifier is like a better version of modifier private as when you make a variable protected you can still access that variable in the subclasses or the inherited classes out there in the code.
 
 ```kotlin
+open class ship{
+    protected var miles_passed=0
+    fun printMilesPassed(){
+        println(miles_passed)
+    }
+}
 
+class ElectricShip:ship(){
+    fun swimUsingEngine(distance:Double){
+        miles_passed+=distance
+    }
+}
+
+fun main(){
+    val Ship=ElectricShip()
+    ship.miles_passed=1000//compiler error
+}
 ```
+
+In the above code you must have noticed that when you try to call the method miles_passed in the class ElectricShip you were able to do it. But at the same then in the main function when you try to call that method you will get compiler error as the variable miles_passed is a `protected` variable which will only grant the access to use it in the subclasses or where this class is inherited to.
