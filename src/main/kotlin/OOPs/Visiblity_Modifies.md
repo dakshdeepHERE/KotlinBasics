@@ -54,3 +54,5 @@ fun main(){
 ```
 
 In the above code you must have noticed that when you try to call the method miles_passed in the class ElectricShip you were able to do it. But at the same then in the main function when you try to call that method you will get compiler error as the variable miles_passed is a `protected` variable which will only grant the access to use it in the subclasses or where this class is inherited to.
+
+
