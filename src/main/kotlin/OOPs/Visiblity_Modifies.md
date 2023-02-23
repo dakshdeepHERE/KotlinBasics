@@ -53,4 +53,21 @@ fun main(){
 }
 ```
 
-In the above code you must have noticed that when you try to call the method miles_passed in the class ElectricShip you were able to do it. But at the same then in the main function when you try to call that method you will get compiler error as the variable miles_passed is a `protected` variable which will only grant the access to use it in the subclasses or where this class is inherited to. We usually use protected modifier on a variable when we don't want  the users to modify the value our variables.  
+In the above code you must have noticed that when you try to call the method miles_passed in the class ElectricShip you were able to do it. But at the same then in the main function when you try to call that method you will get compiler error as the variable miles_passed is a `protected` variable which will only grant the access to use it in the subclasses or where this class is inherited to. We usually use protected modifier on a variable when we don't want  the users to modify the value our variables. 
+
+## Internal Modifier 
+
+Modifies an element to be visible throughout the same module.
+
+```kotlin
+internal fun add(a:Int , b:Int){
+    return a + b
+}
+
+fun main(){
+    val result = add (5,10)
+    println(result) // O/P = 15
+}
+```
+
+In the above code if its yours then thsi internal modifier will normally work like public but the make use of internal starts when but suppose the code written above is a part of a library and you want to use it then you won't be able to do so as the class or function in that library will be defined as internal modifier.
