@@ -70,4 +70,6 @@ fun main(){
 }
 ```
 
-In the above code if its yours then thsi internal modifier will normally work like public but the make use of internal starts when but suppose the code written above is a part of a library and you want to use it then you won't be able to do so as the class or function in that library will be defined as internal modifier.
+In the above code if its yours then this internal modifier will normally work like public but the make use of internal starts when but suppose the code written above is a part of a library and you want to use it then you won't be able to do so as the class or function in that library will be defined as internal modifier.
+
+#### So now we have learned what modifiers are and how to use it. You can set a property or function to private, protected or internal, depending on your needs 
