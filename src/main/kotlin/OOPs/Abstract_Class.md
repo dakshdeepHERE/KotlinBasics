@@ -19,3 +19,43 @@ interface I
 Abstract classes are mainly used when you want to specify a set of generic operations for multiple classes. Let's say that you write an application that draws various shapes in different ways. You might be drawing them on native Android components,  on websites, or on a terminal. Since you draw in different ways on each of those platforms, you need separate classes.
 
 However, there is also another option. Because a  square and a rectangle can be drawn using lines, you can define an abstract class ShapeDrawer, that will define methods drawSquare and drawRectangle based on the abstract method drawLine. Now your drawer classes can inherit from shapeDrawer and only need to define one function drawLine, to have also drawSquare and drawRectangle. 
+
+Consider for a moment the code for this Abstract class example:
+
+```kotlin
+abstract class ShapeDrawer { 
+    fun drawSquare(){ 
+drawLine() 
+    } 
+    fun drawRectangle(){ 
+        drawLine() 
+    } 
+    internal abstract fun drawLine() 
+} 
+class AndroidShapeDrawer():ShapeDrawer(){ 
+
+    override fun drawLine() { 
+        //code that draw lines for android platform 
+        println("Test code -Draw line for  android platform") 
+    } 
+} 
+class DesktopShapeDrawer():ShapeDrawer(){ 
+    override fun drawLine() { 
+        //code that draw lines for android platform 
+        println("Test code -Draw line for  desktop platform") 
+    } 
+} 
+fun main(){ 
+    val androidDrawer:ShapeDrawer = AndroidShapeDrawer() 
+    androidDrawer.drawSquare() 
+    val desktopDrawer:ShapeDrawer = DesktopShapeDrawer() 
+    desktopDrawer.drawSquare() 
+} 
+```
+
+The code produces this output:
+
+```shell
+Test code -Draw line for android platform 
+Test code -Draw line for desktop platform 
+```
