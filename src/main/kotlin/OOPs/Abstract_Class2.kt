@@ -3,7 +3,6 @@ package OOPs
 abstract class ShapeDrawer {
 
     abstract fun drawLine(fromX: Int, fromY: Int, toX: Int, toY: Int)
-
     fun drawSquare(x: Int, y: Int, size: Int) {
         drawLine(x, y, x + size, y)
         drawLine(x + size, y, x + size, y + size)
