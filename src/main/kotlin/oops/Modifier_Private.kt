@@ -1,4 +1,4 @@
-package OOPs
+package oops
 
 open class BankAcoount(){
     private var bank_balance:Int = 0

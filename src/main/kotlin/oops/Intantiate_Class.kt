@@ -1,4 +1,4 @@
-package OOPs
+package oops
 
 fun main(args: Array<String>){
     var student = Student("daksh",20) //here we are instantiating the constructor name from the class Student

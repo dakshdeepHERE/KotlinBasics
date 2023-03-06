@@ -1,6 +1,4 @@
-package OOPs
-
-import Classes.Employee
+package oops
 
 fun main(){
     val s = TOdo()

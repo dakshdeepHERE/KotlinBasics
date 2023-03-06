@@ -1,4 +1,4 @@
-# OOPs
+# oops
 
 Kotlin is primarily `Obeject oriented` but it is also `Procedural` and `Functional`.
 
