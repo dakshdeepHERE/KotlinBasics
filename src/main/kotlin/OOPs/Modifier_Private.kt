@@ -15,6 +15,7 @@ open class Salary constructor(ammount:Int) :BankAcoount(){
     fun printName(){
         println(bank_Name)
     }
+
     // val NewBank_balance= bank_balance + ammount
     // error will be shown above line as the variable bank_balance is a private variable which can only be
     // used in the same function or class
