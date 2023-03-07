@@ -13,3 +13,25 @@ This creates a class called Person with two properties, name and age. The data k
 - `equals()`/`hashCode()`: This method checks if two objects of the class are equal by comparing their properties.
 - `toString()`: This method returns a string representation of the object, usually in the format Person(name=John, age=30).
 - `copy()`: This method creates a copy of the object with the option to change some properties.
+
+For example, you can create an instance of the Person class like this:
+
+```kotlin
+val person = Person("John", 30)
+```
+
+You can then access the properties of the person object like this:
+
+```kotlin
+println(person.name) // prints "John"
+println(person.age) // prints 30
+```
+
+You can also create a copy of the person object and change some properties like this:
+
+```kotlin
+val person2 = person.copy(age = 40)
+println(person2.toString()) // prints "Person(name=John, age=40)"
+```
+
+Data classes are particularly useful when working with collections of data, such as lists or maps, as they provide a clean and concise way to represent and manipulate data.
