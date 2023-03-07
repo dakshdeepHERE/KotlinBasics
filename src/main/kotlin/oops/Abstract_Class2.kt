@@ -1,4 +1,4 @@
-package OOPs
+package oops
 
 abstract class ShapeDrawer {
 

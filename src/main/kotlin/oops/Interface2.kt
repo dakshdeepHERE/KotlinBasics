@@ -1,4 +1,4 @@
-package OOPs
+package oops
 
 fun main(){
     val Sheero = dog("Sheero","German Shepherd")
