@@ -18,5 +18,18 @@ fun main(){
 
     println(dog1)
     // Classes.Dog@4a574795 without data class
+    println(dog2)
+    // Classes.Dog@f6f4d33 without data class
     println("The name of the dog and age is: $dog1")
+
+    //dog1.age = 2 as it is val we cannot change it so we will use the copy method for it
+
+    //Copy method
+
+    val Newdog1 = dog1.copy(age = 2) // here it will copy everything and change the name
+    val NewDog1 = dog1.copy(age = dog1.age + 1)
+    println("Before the copy: $dog1")
+    println(Newdog1)
+    println(NewDog1)
+
 }
